@@ -1,0 +1,57 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Session 4: Assignment 4.4 | Position in CSS</title>
+<style>
+	body{
+		width:400px;
+		margin:10px auto;
+		display: table;
+		border-spacing: 20px;
+		border-collapse: separate;
+	}
+	.grad{
+		width:100px;
+		height:100px;
+		background-color:#009688;
+		color:#ffffff;
+		font-family:"calibri",sans-serif;
+		text-align:center;
+		display:table-cell;
+		vertical-align:middle;		
+		font-size:15px;		
+		border-radius:8px;
+		-webkit-box-shadow:8px 5px 3px #999999;
+		-moz-box-shadow:8px 5px 3px #999999;
+		box-shadow:8px 5px 3px #999999;
+	}
+	#linear{
+		background:red;
+		background:-webkit-linear-gradient(90deg,red,green);
+		background:-moz-linear-gradient(90deg,red,green);
+		background:-o-linear-gradient(90deg,red,green);
+		background:linear-gradient(90deg,red,green);
+	}
+	#elipse{
+		background:red;
+		background:-webkit-radial-gradient(50% -5%,farthest-side,red,yellow,green);
+		background:-moz-radial-gradient(50% -5%,farthest-side,red,yellow,green);
+		background:-o-radial-gradient(50% -5%,farthest-side,red,yellow,green);
+		background:radial-gradient(farthest-side at 50% -5%,red,yellow,green)
+	}
+	#radial{
+		background:red;
+		background:-webkit-radial-gradient(circle,50% 0%,farthest-side,red,yellow,green);
+		background:-moz-radial-gradient(circle,50% 0%,farthest-side,red,yellow,green);
+		background:-o-radial-gradient(circle,50% 0%,farthest-side,red,yellow,green);
+		background:radial-gradient(circle farthest-side at 50% 0%,red,yellow,green)
+	}
+</style>
+</head>
+<body>
+	<div class="grad" id="linear">Box 1</div>
+	<div class="grad" id="radial">Box 2</div>
+	<div class="grad" id="elipse">Box 3</div>
+</body>
+</html>
